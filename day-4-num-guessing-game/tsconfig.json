@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // Added a target for better compilation
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".", // Ensure that the base URL is set for alias paths
+    "paths": {
+      "@/*": [
+        "./*"
+      ] // This will resolve anything starting with @/ to the project root
+    },
+    "allowSyntheticDefaultImports": true // To ensure smooth importing of JS components
+    ,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
