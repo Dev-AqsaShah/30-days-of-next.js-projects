@@ -81,13 +81,13 @@ const BirthdayCard = () => {
                         <FaBirthdayCake
                           className="w-8 h-8 transition-colors duration-300 ease-in-out cursor-pointer hover:scale-110"
                           style={{ color: ['#FF6347', '#FFD700', '#ADFF2F', '#1E90FF', '#FF69B4'][index % 5] }}
-                          onClick={() => lightCandle(index)}
+                          onClick={() => lightCandle(index)} // Using index here
                         />
                       </motion.div>
                     ) : (
                       <FaBirthdayCake
                         className="w-8 h-8 text-gray-300 transition-colors duration-300 ease-in-out cursor-pointer hover:scale-110"
-                        onClick={() => lightCandle(index)}
+                        onClick={() => lightCandle(index)} // Using index here
                       />
                     )}
                   </AnimatePresence>
@@ -109,7 +109,7 @@ const BirthdayCard = () => {
                     <GiBalloons
                       className="w-8 h-8 cursor-pointer hover:scale-110"
                       style={{ color: index < balloonsPoppedCount ? '#D1D5DB' : ['#FF6347', '#FFD700', '#ADFF2F', '#1E90FF', '#FF69B4'][index % 5] }}
-                      onClick={() => popBalloon(index)}
+                      onClick={() => popBalloon(index)} // Using index here
                     />
                   </motion.div>
                 ))}
@@ -145,4 +145,3 @@ const BirthdayCard = () => {
 };
 
 export default BirthdayCard;
-
