@@ -4,6 +4,8 @@ import { useState, ChangeEvent, FormEvent } from "react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/Components/ui/card";
 import { Input, Button } from "@chakra-ui/react";
 import { Cloud, MapPin, Thermometer } from 'lucide-react';
+import '@/styles/globals.css'
+
 
 // Define the structure of weather data
 type WeatherData = {
