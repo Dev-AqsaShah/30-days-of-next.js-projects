@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaBirthdayCake, FaGift } from 'react-icons/fa';
 import { GiBalloons } from 'react-icons/gi';
 import Confetti from 'react-confetti';
+import { cn } from "@/lib/utils";
+
 
 const BirthdayCard = () => {
   const totalCandles = 5;
