@@ -1,12 +1,10 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { FaBirthdayCake, FaGift } from 'react-icons/fa';
-import { GiBalloons } from 'react-icons/gi';
-import Confetti from 'react-confetti';
-import { cn } from "@/lib/utils";
-
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaBirthdayCake, FaGift } from "react-icons/fa";
+import { GiBalloons } from "react-icons/gi";
+import Confetti from "react-confetti";
 
 const BirthdayCard = () => {
   const totalCandles = 5;
@@ -27,8 +25,8 @@ const BirthdayCard = () => {
       });
     };
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Lighting a candle
