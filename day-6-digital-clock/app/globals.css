@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes borderAnimation {
+    0% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(78, 174, 215);
+    }
+    100% {
+      border-color: transparent ;
+    }
+  }
+  
+  .animate-border {
+    animation: borderAnimation 4s infinite alternate;
+  }
+
+  .animate-border {
+    animation: borderAnimation 2s infinite alternate;
+    border-width: 8px; /* Increase border width */
+    filter: blur(6px); /* Apply a slight blur effect */
+  }
